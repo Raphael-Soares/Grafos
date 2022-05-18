@@ -36,13 +36,10 @@ export default {
 .navbar {
     font-size: 1.5rem;
     font-family: 'Bebas Neue', 'cursive';
-    border: solid 1px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
     padding: 10px;
-
     background-color: black;
 }
 .navbar .row{

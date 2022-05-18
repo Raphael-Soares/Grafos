@@ -1,20 +1,31 @@
 <template>
-  <navbar/>
+  <NavbarComp/>
+  <div class="main"></div>
+  <FooterComp/>
 </template>
 
 <script>
 
-import navbar from "./components/NavbarComp.vue"
+import NavbarComp from "./components/NavbarComp.vue"
+import FooterComp from "./components/FooterComp.vue"
+
+
 export default {
     components: {
-        navbar
-    }
+    FooterComp,
+    NavbarComp,
+
+}
 
 }
 </script>
 
 <style>
 body { margin: 0; }
+
+.main {
+  height: 100vh;
+}
 
 </style>
        
