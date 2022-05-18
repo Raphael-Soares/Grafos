@@ -40,7 +40,7 @@ export default {
     flex-direction: row;
     justify-content: space-between;
     padding: 10px;
-    background-color: black;
+    /* background-color: black; */
 }
 .navbar .row{
     display: flex;
