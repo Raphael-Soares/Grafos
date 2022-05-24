@@ -1,24 +1,27 @@
 <template>
-  <div class="page">
+  <div class="bg-page">
     <NavbarComp/>
     <div class="main">
-      <div class="main-title">
-        O que é a “Teoria dos Grafos?”
+      <div class="text-area">
+        <div class="title" >O que é a “Teoria dos Grafos?”</div>
+        <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
       </div>
-      <div class="main-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <img src="./images/grafico_exp.png" alt="">
+      <div class="text-area">
+        <div class="title" >Como a visualização de grafos do Lexinode funciona?</div>
+        <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
       </div>
+      
     </div>
-      <div class="image"></div>
+      
 
 
 
-    <FooterComp/>
   </div>
+    <FooterComp/>
 </template>
 
 <script>
-
 import NavbarComp from "./components/NavbarComp.vue"
 import FooterComp from "./components/FooterComp.vue"
 
@@ -27,7 +30,6 @@ export default {
     components: {
     FooterComp,
     NavbarComp,
-
 }
 
 }
@@ -36,46 +38,32 @@ export default {
 <style>
 body { 
   margin: 0; 
-      font-size: 1.5rem;
-    font-family: 'Bebas Neue', 'cursive';
-;}
-
-
-.page {
-  background-image: url("@/images/bgi.jpg");
-  background-repeat: no-repeat
+  font-size: 25px;
+  font-family: 'Bebas Neue', 'cursive';
 }
+
+.bg-page {
+  background-image: url("@/images/bgi.jpeg");
+  border: solid;
+  background-repeat: no-repeat; 
+
+}
+
 
 .main {
   margin-top: 100px;
-  height: 120vh;
   text-align: center;
-  color: aliceblue;
-
+  margin-inline: 100px;
+  color: white;
 }
 
-.main-title{
-  font-size: 2.5rem;;
-
-}
-.main-text {
-  padding: 100px;
-  font-size: 1.5rem;
-  
+.title{
+  font-size: 3rem;;
 }
 
-.image {
-  background-image: url("@/images/graf.jpg");
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  margin: 0;
-  position: absolute;
-  top: 1000px;
-
+.text-area {
+  margin-block: 100px;
 }
-
 
 </style>
        
