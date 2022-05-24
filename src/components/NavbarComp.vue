@@ -6,13 +6,13 @@
         </div>
 
         <div class="row push">
-            <div class="item">ARTIGOS</div>
-            <div class="item push">AUTORES</div>
+            <a href="#" class="item">ARTIGOS</a>
+            <a href="#" class="item push">AUTORES</a>
         </div>
 
         <div class="row ">
-            <div class="item ">CRIAR CONTA</div>
-            <div class="item ">ENTRAR</div>
+            <a href="#" class="item ">CRIAR CONTA</a>
+            <a href="#" class="item ">ENTRAR</a>
         </div>
 
     </div>
@@ -48,10 +48,17 @@ export default {
 .row{
     display: flex;
     align-items: center;
+    
 }
 .item {
-    
+    text-decoration: none;
+    color: white;
     margin-inline: 20px;
+    transition: 0.2s;
+}
+
+.item:hover {
+    color: #0952DB;
 }
 
 .push {
